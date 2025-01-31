@@ -4,16 +4,16 @@ import android.graphics.drawable.GradientDrawable
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.notes.data.Note
+import com.example.notes.data.model.Note
 import com.example.notes.databinding.ItemNoteBinding
 
 class Adapter(private val notes: List<Note>) : RecyclerView.Adapter<Adapter.NoteViewHolder>() {
 
     class NoteViewHolder(private val binding: ItemNoteBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(note: Note) {
-            binding.textViewTitle.text = note.title
-            binding.textViewDescription.text = note.description
-            binding.textViewDate.text = note.date
+            binding.tvTitle.text = note.title
+            binding.tvDescription.text = note.description
+            binding.tvData.text = note.data
             (binding.root.background as GradientDrawable).setColor(note.color)
         }
     }

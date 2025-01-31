@@ -2,6 +2,7 @@
         alias(libs.plugins.android.application)
         alias(libs.plugins.kotlin.android)
         id("androidx.navigation.safeargs.kotlin")
+        id("com.google.gms.google-services")
     }
 
     android {
@@ -47,9 +48,16 @@
         implementation(libs.material)
         implementation(libs.androidx.activity)
         implementation(libs.androidx.constraintlayout)
+        implementation(libs.androidx.room.ktx)
+        implementation(libs.firebase.firestore.ktx)
+        implementation(libs.google.firebase.auth)
+        implementation(libs.firebase.firestore)
         testImplementation(libs.junit)
         androidTestImplementation(libs.androidx.junit)
         androidTestImplementation(libs.androidx.espresso.core)
         implementation(libs.androidx.navigation.fragment.ktx)
         implementation(libs.androidx.navigation.ui.ktx)
+        implementation (libs.lottie)
+        implementation(libs.firebase.auth.ktx.v2310)
+        implementation(libs.play.services.auth.v2130)
     }

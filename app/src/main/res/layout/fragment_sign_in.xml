@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black2"
+    tools:context=".ui.fragments.signIn.SignInFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mnotes"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="74dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_note"
+            android:layout_gravity="center"
+            android:layout_marginTop="112dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/authorization"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="42dp"
+            />
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btnGoogleSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="76dp"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            android:theme="@style/Widget.AppCompat.Button.Colored"/>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

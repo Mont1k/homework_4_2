@@ -1,12 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?><navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     app:startDestination="@id/noteListFragment">
+<fragment
+        android:id="@+id/onBoardFragment"
+        android:name="com.example.notes.ui.fragments.onboards.OnBoardFragment"
+        android:label="OnBoard"
+        tools:layout="@layout/fragment_on_board">
+    <action
+        android:id="@+id/action_onBoardFragment_to_signInFragment"
+        app:destination="@id/signInFragment" />
+</fragment>
 
     <fragment
         android:id="@+id/noteListFragment"
-        android:name="com.example.notes.fragment.ListNoteFragment"
+        android:name="com.example.notes.ui.fragments.note.ListNoteFragment"
+        android:label="All Notes"
         tools:layout="@layout/fragment_note_list">
         <action
             android:id="@+id/action_noteListFragment_to_addNoteFragment"
@@ -15,6 +24,20 @@
 
     <fragment
         android:id="@+id/addNoteFragment"
-        android:name="com.example.notes.fragment.AddNoteFragment"
-        tools:layout="@layout/fragment_note_add" />
+        android:name="com.example.notes.ui.fragments.note.AddNoteFragment"
+        android:label="Add Note"
+        tools:layout="@layout/fragment_note_add">
+        <argument android:name="noteId"
+            app:argType="integer"/>
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.notes.ui.fragments.signIn.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_noteListFragment"
+            app:destination="@id/noteListFragment" />
+    </fragment>
+
 </navigation>

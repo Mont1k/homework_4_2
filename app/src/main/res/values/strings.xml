@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">Notes</string>
+    <string name="app_name">MNotes</string>
+    <string name="change_color">Change color</string>
+    <string name="_21_january_15_45">21 january 15:45</string>
+    <string name="ready">Ready</string>
+    <string name="text">Text</string>
+    <string name="description">Description</string>
+    <string name="all_notes">All notes</string>
+    <string name="search_notes">Search notes</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="notes">Notes</string>
+    <string name="mnotes">Notes</string>
+    <string name="authorization">Authorization</string>
+    <string name="web_client_id" translatable="false">376973060158–8tj7r6vsklj79s3s8466somph5rckfkk.apps.googleusercontent.com</string>
 </resources>
